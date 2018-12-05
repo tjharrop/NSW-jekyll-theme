@@ -14,23 +14,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Name of product or service
-email: your-email@example.com
+email: tjharrop@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Simple explaination of the product or service.
-baseurl: "/nsw-uikit-starter" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-
-pages:
-  - home
-    breadcrumb: Home
-    url: /
-  - folder
-  - basic
-    breadcrumb: Basic page example
-    url: /basic/
-  - form
+twitter_username: tjharrop
+github_username:  tjharrop
 
 # Build settings
 markdown: kramdown
