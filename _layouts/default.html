@@ -66,6 +66,7 @@
 		</div>
 	</header>
 
+{% if site.data.navs.mainnav[0] %}
 	<!-- MAIN NAVIGATION -->
 	<nav class="au-main-nav au-main-nav--dark" id="mainmenu" aria-label="main navigation">
 		<div class="container-fluid">
@@ -78,7 +79,7 @@
 							onClick="return AU.mainNav.Toggle( this )">
 							Menu
 						</button>
-						{% if site.data.navs.mainnav[0] %}
+
 						<div class="au-main-nav__menu">
 							<div class="au-main-nav__menu-inner">
 								<div class="au-main-nav__focus-trap-top"></div>
@@ -99,14 +100,14 @@
 								<div class="au-main-nav__focus-trap-bottom"></div>
 							</div>
 						</div>
-						{% endif %}
+
 						<div class="au-main-nav__overlay" aria-controls="main-nav-default-dark" onClick="return AU.mainNav.Toggle( this )"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</nav>
-
+{% endif %}
 	<!-- MAIN BODY -->
 	<main>
 		<!--CONTENT-->

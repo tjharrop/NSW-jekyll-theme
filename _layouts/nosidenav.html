@@ -66,6 +66,7 @@
 		</div>
 	</header>
 
+{% if site.data.navs.mainnav[0] %}
 	<!-- MAIN NAVIGATION -->
 	<nav class="au-main-nav au-main-nav--dark" id="mainmenu" aria-label="main navigation">
 		<div class="container-fluid">
@@ -88,11 +89,10 @@
 									Close
 								</button>
 								<ul class="au-link-list">
-                  {% if site.data.navs.mainnav[0] %}
+
                     {% for item in site.data.navs.mainnav[0].items %}
   									         <li class="{% if item.url == page.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}">{{ item.page }}</a></li>
                     {% endfor %}
-                  {% endif %}
 								</ul>
 								<div class="au-main-nav__focus-trap-bottom"></div>
 							</div>
@@ -103,6 +103,7 @@
 			</div>
 		</div>
 	</nav>
+	{% endif %}
 
 	<!-- MAIN BODY -->
 	<main>
