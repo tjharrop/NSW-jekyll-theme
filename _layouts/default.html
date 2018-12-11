@@ -136,7 +136,7 @@
                   {% for item in site.data.navs.sidenav[0].items %}
 									<li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.page }}</a>
                     {% if item.subfolderitems[0] %}
-			{% if splitted_url_parts.include?(item.url) %} <!-- It's in! -->{% else %} <!-- It's not! item.page {{item.page}} - item.url {{item.url}} - splitted_url_parts {{splitted_url_parts}} --> {% endif %}
+			{% if request.fullpath.include?(item.url) %} <!-- It's in! -->{% else %} <!-- It's not! item.page {{item.page}} - item.url {{item.url}} - splitted_url_parts {{splitted_url_parts}} --> {% endif %}
                     <ul class="au-link-list {% if item.url != page.url %}hideme{% endif %}">
                       {% for entry in item.subfolderitems %}
                       <li><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a>
