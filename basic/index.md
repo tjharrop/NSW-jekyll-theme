@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: sidenav
 breadcrumb: Basic page example
 name: Basic page example
 ---
